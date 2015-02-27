@@ -7,7 +7,7 @@
 @section('content')
   <div class="container">
     <br>
-    <h2 class="text-center text-uppercase"><i class="fa fa-globe"></i> КомпНэт</h2>
+    <h2 class="text-center text-uppercase"><i class="fa fa-globe"></i> Компании</h2>
     <br>
 
     {{ $page->text }}

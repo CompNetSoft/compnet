@@ -4,12 +4,9 @@
           box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 }
 .slider {
-  position: absolute;
   background-color: #000000;
-  /*position: fixed;*/
 }
 .slider img {
-  position: fixed;
   z-index: 5;
 }
 .bg-dark {

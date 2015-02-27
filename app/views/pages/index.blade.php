@@ -130,7 +130,10 @@
         <br><br>
         <p class="text-center">
           <a href="{{ route('services', 'it-outsourcing') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-          <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#Calculator">
+            <i class="fa fa-calculator"></i> Калькулятор
+          </button>
         </p>
         <br><br>
       </div>
