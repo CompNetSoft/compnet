@@ -6,7 +6,7 @@
 
 @section('content')
   <div class="slider">
-    <div class="info container">
+    <div class="container">
       <!-- <img src="/img/cosmos-2.jpg" class="img-responsive"> -->
     </div>
   </div>
