@@ -1,0 +1,53 @@
+
+#local {
+  display: none;
+  color: #000;
+}
+
+.number {
+  width:40px;
+  height:23px;
+  color: #000;
+}
+
+/*#res {
+  max-width: 231px;
+}*/
+
+
+#count .passive {
+  outline: none !important;
+  background-color: #008cba !important;
+  border-color: #0079a1 !important;
+}
+#count .active {
+  background-color: #006687;
+  border-color: #004b63;
+  outline: 2px solid #266DB0;
+  outline-offset: -2px; 
+}
+
+
+
+/*.checkbox {
+  position:relative;
+}
+.checkbox input[type = checkbox] {
+  display:none;
+}
+.checkbox label:after {
+  content:'';
+  display:block;
+  height:14px;
+  width:14px;
+  background: #fff;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+  border:1px solid #fff;
+  width:14px;
+  height:14px;
+  background-color:#F3535D;
+}*/
