@@ -134,11 +134,101 @@
           <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#Calculator">
             <i class="fa fa-calculator"></i> Калькулятор
           </button>
+          <!-- <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target=".calculator">
+            <i class="fa fa-calculator"></i> Калькулятор
+          </button> -->
         </p>
         <br><br>
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="Calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-muted" aria-hidden="true">&times;</span></button>
+        <h2 class="text-center modal-title" id="myModalLabel">Калькулятор</h2>
+      </div>
+      <div class="modal-body">
+        <div id="count">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <h3 class="text-light-coral">Структура сети</h3>
+            <input id="priceDepot" type="hidden" value="5000">Количество рабочих станций&nbsp;
+            <span class="chevron">
+              <i id="leftDepot" class="fa fa-chevron-left"></i> 
+              <input id="amountDepot" class="number" type="text" value="0"> 
+              <i id="rightDepot" class="fa fa-chevron-right"></i>
+            </span>
+            <div class="checkbox">
+              <label><input type="checkbox" value="5000"> Локальная сеть</label>
+            </div>
+            <div class="checkbox">
+              <label><input id="forLocal" type="checkbox"> Интернет</label>
+              <select id="local">
+                <option value="1000">ADSL-модем</option>
+                <option value="2000">Выделенный канал</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="3000"> Firewall</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="800"> Принтер</label>
+            </div>
+            <h3 class="text-light-coral">Программное обеспечение</h3> 
+            <div class="checkbox">
+              <label><input type="checkbox" value="7000"> Бухгалтерское ПО</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <h3 class="text-light-coral">Роли сервера</h3>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2000"> Файловый сервер</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2800"> Сервер домена</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2000"> Почтовый сервер</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2000"> Сервер приложений</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2000"> Сервер терминалов</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2000"> Шлюз</label>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h3 class="text-light-coral">Создание сайта</h3> 
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary passive" value="54000">Сайт визитка</button>
+              <button type="button" class="btn btn-primary passive" value="89000">Интернет магазин</button>
+              <button type="button" class="btn btn-primary passive" value="69000">Landing page</button>
+              <button type="button" class="btn btn-primary passive" value="99000">Веб-приложение</button>
+            </div>
+            <div class="row">
+              <br>
+              <div class="form-group col-md-3">
+                <label class="control-label">Стоимость товара и услуг:</label>
+                <input type="text" class="form-control" id="res" value="0" disabled>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <section class="bg-dark">
     <br>
