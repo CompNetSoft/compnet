@@ -6,8 +6,10 @@
 .slider {
   background-color: #000000;
 }
-.slider img {
-  z-index: 5;
+.slider .container {
+  height: 455px;
+  background-image: url(/img/cosmos-2.jpg);
+  background-attachment: fixed;
 }
 .bg-dark {
   color: #FAFAFA;
@@ -127,7 +129,7 @@
   background: #fff;
   border-color: #fff;
 }
-.btn-order {
+.btn-outlined.btn-order {
   color: #fff;
   background: none;
   padding: 12px 24px;

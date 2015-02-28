@@ -4,7 +4,10 @@
     <li><a href="#administrator" data-toggle="tab">Системный администратор на полный рабочий день</a></li>
     <li><a href="#network" data-toggle="tab">Проектирование и обслуживание сетей</a></li>
     <li><a href="#1s" data-toggle="tab">1С:Предприятие</a></li>
-  </ul><br>
+  </ul>
+  <hr>
+  <p><a href="{{ url('/files/Прайс лист.xls') }}"><i class="glyphicon glyphicon-save-file"></i> Скачать Прайс лист</a></p>
+  <p><a href="{{ url('/files/Коммерческое предложение.pdf') }}"><i class="glyphicon glyphicon-list-alt"></i> Коммерческое предложение</a></p>
 </div>
 <div class="col-md-9 col-sm-6">
   <div id="myTabContent" class="tab-content">

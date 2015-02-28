@@ -6,8 +6,8 @@
 
 @section('content')
   <div class="slider">
-    <div class="container">
-      <img src="/img/cosmos-2.jpg" class="img-responsive">
+    <div class="info container">
+      <!-- <img src="/img/cosmos-2.jpg" class="img-responsive"> -->
     </div>
   </div>
 
@@ -184,45 +184,43 @@
       <br><br>
       <h1 class="text-center text-uppercase text-light-coral">SEO &amp; SMM</h1>
       <br>
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <h2 class="text-center">SEO (Search Engine Optimization) Поисковая Оптимизация</h2>
-          <br>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <img src="{{ asset('/img/se/google.png') }}" class="img-responsive" title="Google" alt="Google">
-          </div>
-          <p class="col-md-12 col-sm-12 col-xs-12"></p>
-          <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8">
-            <img src="{{ asset('/img/se/mail.ru.png') }}" class="img-responsive" title="Mail.ru" alt="Mail.ru">
-          </div>
-          <p class="col-md-12"></p>
-          <p class="clearfix"></p>
-          <p class="text-justify">Чем выше позиция вашего сайта в выдаче поисковика, тем больше вероятность, что посетитель зайдёт на сайт, так как примерно 100% заходит по первым трём ссылкам поисковой выдачи, далее тенденция к уменьшению – до десятой ссылки первой страницы выдачи добираются 20-50% пользователей.</p>
-          <p class="text-justify">На вторую страницу выдачи поиковика заходят 10-20%. Следовательно, для всякого ресурса наиболее желанно место именно в первой десятке поисковой выдачи. Но, к сожалению, сайтов-конкурентов слишком много, а десятка всего одна. Появляется резонный вопрос: как же покорить это вершину и выбиться в лидеры? И тут SEO-оптимизация сайта приходит на помощь.</p>
+      <div class="col-md-6 col-sm-6">
+        <h2 class="text-center">SEO (Search Engine Optimization) Поисковая Оптимизация</h2>
+        <br>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <img src="{{ asset('/img/se/google.png') }}" class="img-responsive" title="Google" alt="Google">
         </div>
-        <div class="col-md-6 col-sm-6">
-          <h2 class="text-center">SMM (Social Media Marketing) Продвижение в Социальных Медиа</h2>
-          <br>
-          <img src="{{ asset('/img/sn/facebook.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Facebook" alt="Facebook">
-          <img src="{{ asset('/img/sn/twitter.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Twitter" alt="Twitter">
-          <img src="{{ asset('/img/sn/vk.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Vkontakte" alt="Vkontakte">
-          <p class="col-md-12 col-sm-12 col-xs-12"><br></p>
-          <img src="{{ asset('/img/sn/google-plus.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Google Plus" alt="Google Plus">
-          <img src="{{ asset('/img/sn/linkedin.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="LinkedIn" alt="LinkedIn">
-          <img src="{{ asset('/img/sn/instagram.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Instagram" alt="Instagram">
-          <img src="{{ asset('/img/sn/odnoklassniki.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Odnoklassniki" alt="Odnoklassniki">
-          <p class="clearfix"></p>
-          <p class="text-justify">SMM - деятельность, целью которой является продвижение товара или бренда в социальных сетях. Увеличить узнаваемость, а так же лояльность клиентов к бренду. Продвижение в социальных сетях – это процесс, целью которого является привлечь аудиторию в сообщество бренда. Донести до целевой аудиторий ключевые преимущества предлагаемых товаров и услуг (цена, качество и другие).</p>
-          <p class="text-justify">Если раньше продвижение бренда совершалась по средством телерекламы, сейчас актуально через социальные сети. Как показывает статистика одной социальной сети, больше всех в социальных сетях зарегистрированы люди от 18-34 лет.</p>
+        <p class="col-md-12 col-sm-12 col-xs-12"></p>
+        <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8">
+          <img src="{{ asset('/img/se/mail.ru.png') }}" class="img-responsive" title="Mail.ru" alt="Mail.ru">
         </div>
-        <div class="col-md-12 col-sm-12">
-          <br><br>
-          <p class="text-center">
-            <a href="{{ route('services', 'seo-smm') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-            <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
-          </p>
-          <br><br>
-        </div>
+        <p class="col-md-12"></p>
+        <p class="clearfix"></p>
+        <p class="text-justify">Чем выше позиция вашего сайта в выдаче поисковика, тем больше вероятность, что посетитель зайдёт на сайт, так как примерно 100% заходит по первым трём ссылкам поисковой выдачи, далее тенденция к уменьшению – до десятой ссылки первой страницы выдачи добираются 20-50% пользователей.</p>
+        <p class="text-justify">На вторую страницу выдачи поиковика заходят 10-20%. Следовательно, для всякого ресурса наиболее желанно место именно в первой десятке поисковой выдачи. Но, к сожалению, сайтов-конкурентов слишком много, а десятка всего одна. Появляется резонный вопрос: как же покорить это вершину и выбиться в лидеры? И тут SEO-оптимизация сайта приходит на помощь.</p>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <h2 class="text-center">SMM (Social Media Marketing) Продвижение в Соц. Медиа</h2>
+        <br>
+        <img src="{{ asset('/img/sn/facebook.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Facebook" alt="Facebook">
+        <img src="{{ asset('/img/sn/twitter.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Twitter" alt="Twitter">
+        <img src="{{ asset('/img/sn/vk.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Vkontakte" alt="Vkontakte">
+        <p class="col-md-12 col-sm-12 col-xs-12"><br></p>
+        <img src="{{ asset('/img/sn/google-plus.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Google Plus" alt="Google Plus">
+        <img src="{{ asset('/img/sn/linkedin.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="LinkedIn" alt="LinkedIn">
+        <img src="{{ asset('/img/sn/instagram.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Instagram" alt="Instagram">
+        <img src="{{ asset('/img/sn/odnoklassniki.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Odnoklassniki" alt="Odnoklassniki">
+        <p class="clearfix"></p>
+        <p class="text-justify">SMM - деятельность, целью которой является продвижение товара или бренда в социальных сетях. Увеличить узнаваемость, а так же лояльность клиентов к бренду. Продвижение в социальных сетях – это процесс, целью которого является привлечь аудиторию в сообщество бренда. Донести до целевой аудиторий ключевые преимущества предлагаемых товаров и услуг (цена, качество и другие).</p>
+        <p class="text-justify">Если раньше продвижение бренда совершалась по средством телерекламы, сейчас актуально через социальные сети. Как показывает статистика одной социальной сети, больше всех в социальных сетях зарегистрированы люди от 18-34 лет.</p>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <br><br>
+        <p class="text-center">
+          <a href="{{ route('services', 'seo-smm') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
+          <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
+        </p>
+        <br><br>
       </div>
     </div>
   </section>
@@ -259,6 +257,7 @@
       </div>
       <div class="col-md-12">
         <br><br>
+        <p class="text-center">Приведите друга и получите скидку 10% для Вас и для Вашего друга.</p>
         <p class="text-center">Чтобы записаться на эту программу обучения достаточно обратиться в Учебный Центр при ТОО «CompNet Technologies» для заключения договора и в кратчайшие сроки приступить к изучению курса.</p>
         <br>
         <p class="text-center">
@@ -334,14 +333,9 @@
       <div class="clearfix"></div>
       <br><br>
 
-      <div class="col-md-6">
-        <p class="text-justify">Bulum iaculis lacinia est. Proin dictum elemntum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit met consectetuer adipiscing elit. ellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.</p>
-        <p class="text-justify">Nulla vene natis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante. Donec sagittis euismod pured ut perspiciatis unde omnis iste natus errouptatem accusa ntium doloremque laudantium tota.</p>
+
+      <div class="col-md-12">
         {{ $page->text }}
-      </div>
-      <div class="col-md-6">
-        <p class="text-justify">Nulla facilis Aenean nectibulumante ipsum prin faucibus orci luctus et trices posuere cubilia Suspendse sollicit udin velit sed le pharetra aue nec augentum. Donec in velit vel ipsum auue. Nam elit magna. Donec porta diam eu massa diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fermentunec in velit vel ipsum auctinar. Proin ullamcorp.</p>
-        <p class="text-justify">Bulum iaculis lacinia est. Proin dictum elemntum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit met consectetuer adipiscing elit. ellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla vene natis. In pede mi aliquet sit amet</p>
       </div>
     </div>
     <br><br><br>
