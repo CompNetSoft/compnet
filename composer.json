@@ -5,9 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-	    "way/generators": "~3.0",
 		"intervention/image": "dev-master",
-		"guzzlehttp/guzzle": "~5.1"
+		"guzzlehttp/guzzle": "~5.1",
+		"way/generators": "~2.0"
 	},
 	"autoload": {
 		"classmap": [

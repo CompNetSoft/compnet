@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'compnet',
+			'database'  => 'compnet_db',
 			'username'  => 'root',
-			'password'  => '789',
+			'password'  => 'bireki',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

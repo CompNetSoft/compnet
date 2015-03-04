@@ -9,51 +9,38 @@
 .slider .container {
   height: 455px;
   background-image: url(/img/cosmos-2.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.container .logo {
+  width: 200px;
+  margin-top: 20px;
 }
 .bg-dark {
   color: #FAFAFA;
   background-color: #263238;
   -webkit-box-shadow: 0px -4px 40px -8px #111111;
           box-shadow: 0px -4px 40px -8px #111111;
-  z-index: 15;
 }
-.bg-light-grey {
-  background-color: #eee;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-white {
-  color: #fff;
-}
-.text-dark {
-  color: #263238;
-}
-.text-light-coral {
-  color: #F3535D;
-}
-.text-light-coral .fa-stack {
-  line-height: 1.40em;
-}
-.fa-you:before {
-  font-size: 0.60em;
-  content: "YOU";
-}
-.thumbnail {
-  padding: 0;
-  border: none;
-}
+.bg-light-grey { background-color: #eee; }
+.text-uppercase { text-transform: uppercase; }
+.text-white { color: #fff; }
+.text-dark { color: #263238; }
+.text-light-coral { color: #F3535D;}
+.text-light-coral .fa-stack { line-height: 1.40em; }
+.fa-you:before { font-size: 0.60em; content: "YOU"; }
+.fa-chevron-right, .fa-chevron-left { cursor: pointer; }
+.thumbnail { padding: 0; border: none; }
 
-/* Info Blocks */
+/* Info blocks */
 .services {
   color: #fff;
   padding: 25px 0;
   background-color: #F3535D;
+  border-top: 4px solid #CD4951;
 }
 .shadow {
   -webkit-box-shadow: 8px 2px 10px -8px rgba(0,0,0,0.35);
-     -moz-box-shadow: 8px 2px 10px -8px rgba(0,0,0,0.35);
           box-shadow: 8px 2px 10px -8px rgba(0,0,0,0.35);
 }
 .services p {
@@ -141,6 +128,16 @@
   background: #fff;
   border-color: #fff;
 }
+.fb { background-color: #3b5998; }
+.tw { background-color: #00aced; }
+.gl { background-color: #dd4b39; }
+.li { background-color: #007bb6; }
+.vk { background-color: #45668e; }
+.fb:hover { color: #eeeeee; }
+.tw:hover { color: #eeeeee; }
+.gl:hover { color: #eeeeee; }
+.li:hover { color: #eeeeee; }
+.vk:hover { color: #eeeeee; }
 
 /* BarChart */
 #chardiv {
@@ -161,6 +158,17 @@
 }
 .site-description-fix {
   height: 125px;
+}
+
+/* Calculator */
+#local {
+  display: none;
+  color: #000;
+}
+.number {
+  width: 40px;
+  height: 23px;
+  color: #000;
 }
 
 /* Footer */

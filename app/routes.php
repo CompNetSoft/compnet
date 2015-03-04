@@ -21,6 +21,7 @@ Route::post('show-service', ['uses' => 'IndexController@showService']);
 
 Route::group(['prefix' => 'admin', 'before' => 'auth'], function()
 {
+	Route::resource('apps', 'AdminAppsController', ['only' => ['index', 'show', 'destroy']]);
 	Route::resource('pages', 'AdminPagesController');
 	Route::resource('info', 'AdminInfoController');
 	Route::resource('projects', 'AdminProjectsController');
@@ -32,8 +33,8 @@ Route::group(['before' => 'quest'], function()
 {
 	Route::group(['before' => 'csrf'], function()
 	{
-		Route::post('send', ['as' => 'send-message', 'uses' => 'IndexController@send']);
-
+		Route::post('send-app', ['as' => 'send-app', 'uses' => 'IndexController@sendApp']);
+		Route::post('send-calc', ['as' => 'send-calc', 'uses' => 'CalcController@sendCalc']);
 		Route::post('sign-in', ['as' => 'post-sign-in', 'uses' => 'AuthController@postSignIn']);
 		// Route::post('create-account', ['as' => 'post-create-account', 'uses' => 'AuthController@postCreateAccount']);
 	});

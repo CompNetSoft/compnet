@@ -1,0 +1,23 @@
+<?php
+return [
+    'computer' => 'Компьютеры',
+    'local-network' => 'Локальная сеть',
+    'internet' => 'Интернет',
+    'firewall' => 'Firewall',
+    'printer' => 'Принтер',
+    'file-server' => 'Файловый сервер',
+    'domain-server' => 'Сервер домена',
+    'mail-server' => 'Почтовый сервер',
+    'application-server' => 'Сервер приложений',
+    'terminal-server' => 'Сервер терминалов',
+    'gateway' => 'Шлюз',
+    'accounting-software' => 'Бухгалтерское ПО',
+    'website' => 'Сайт Визитка',
+    'landing-page' => 'Landing Page',
+    'internet-shop' => 'Интернет Магазин',
+    'web-application' => 'WEB Приложение',
+    'seo' => 'SEO',
+    'smm' => 'SMM',
+    'system-administration' => 'Системное Администрирование',
+    'web-programming' => 'WEB Программирование',
+];

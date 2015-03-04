@@ -39,6 +39,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
             <li class="{{ (Request::is('admin/pages')) ? 'active' : '' }}"><a href="{{ URL::route('admin.pages.index') }}"><i class="fa fa-files-o"></i> Страницы</a></li>
+            <li class="{{ (Request::is('admin/apps')) ? 'active' : '' }}"><a href="{{ URL::route('admin.apps.index') }}"><i class="fa fa-send"></i> Заявки</a></li>
             <li class="{{ (Request::is('admin/info')) ? 'active' : '' }}"><a href="{{ URL::route('admin.info.index') }}"><i class="fa fa-info-circle"></i> Инфо-Блоки</a></li>
             <li class="{{ (Request::is('admin/projects')) ? 'active' : '' }}"><a href="{{ URL::route('admin.projects.index') }}"><i class="fa fa-cubes"></i> Портфолио</a></li>
           </ul>

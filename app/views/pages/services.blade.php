@@ -8,8 +8,7 @@
   <div class="container page-services">
     <br>
     <h2 class="text-center text-uppercase"><a href="{{ route('index') }}"><i class="fa fa-home"></i></a> / Услуги</h2>
-    <h4><a href="#" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</a></h4>
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
+    <!-- <h4><a href="#" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</a></h4> -->
     <div class="row">
       <ul class="nav nav-pills">
         <li class="col-md-3 col-sm-3 col-xs-6 @if (Request::is('services/it-outsourcing')) {{ 'active' }} @endif">
@@ -33,24 +32,6 @@
       {{ $info }}
 
       {{ $page->text }}
-    </div>
-  </div>
-
-  <div class="modal fade" id="calculator" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-muted" aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Калькулятор</h4>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-          <button type="button" class="btn btn-primary">Отправить заявку</button>
-        </div>
-      </div>
     </div>
   </div>
 @stop

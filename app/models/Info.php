@@ -4,7 +4,6 @@ class Info extends \Eloquent {
 
 	protected $table = 'info_blocks';
 
-	// Add your validation rules here
 	public static $rules = [
 		'url' => 'required|min:3|max:25',
 		'title' => 'required|min:3|max:25',

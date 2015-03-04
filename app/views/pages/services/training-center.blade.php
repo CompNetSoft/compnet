@@ -49,7 +49,7 @@ Sometimes, almost exclusively in smaller sites, the role of system administrator
   </pre>
 </div>
 <div class="col-md-6 col-sm-6">
-  <h2 class="text-center">WEB Разработка</h2>
+  <h2 class="text-center">WEB Программирование</h2>
   <pre>
 Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications, electronic businesses, and social network services. A more comphensive list of tasks to which web development commonly refers, may include web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development. Among web professionals, "web development" usually refers to the main non-design aspects of building web sites: writing markup and coding.
 
