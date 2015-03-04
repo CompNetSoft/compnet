@@ -62,12 +62,9 @@ class IndexController extends BaseController {
 		return View::make('pages.contacts', compact('page'));
 	}
 
-	public function send()
+	public function sendApp()
 	{
-		$validator = Validator::make($user = Input::all(), [
-			'name' => 'required|min:3|max:25',
-			'phone' => 'required|min:3|max:25'
-		]);
+		$validator = Validator::make($user = Input::all(), Order::$rules);
 
 		if ($validator->fails())
 		{
@@ -77,13 +74,20 @@ class IndexController extends BaseController {
 		}
 		else
 		{
-			$data = ['name' => $user['name'], 'email' => $user['email'], 'phone' => $user['phone'], 'service' => $user['service']];
+			$data = [
+				'name' => $user['name'],
+				'email' => (isset($user['email'])) ? $user['email'] : 'no',
+				'phone' => $user['phone'],
+				'service' => $user['service']
+			];
 
 			Mail::send('emails.message', $data, function ($message) {
 			  	$message->to('is.adilet@mail.ru', 'Is. Adilet')->subject('Новая заявка. CompNet.kz');
 			});
 
-			return Redirect::route('contacts')->with('global', 'Спасибо! Ваша заявка отпралена.');
+			Order::create($data);
+
+			return Redirect::route('contacts')->with('global', 'Спасибо! Ваша заявка принята.');
 		}
 	}
 }

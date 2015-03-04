@@ -22,8 +22,6 @@
     <link href="{{ asset('/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/bootstrap-yeti.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/calc.css') }}" rel="stylesheet">
-
 
     @yield('head')
 
@@ -85,7 +83,6 @@
     <script src="{{ asset('/js/jquery-2.1.0.min.js') }}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/js/calc.js') }}"></script>
     @yield('scripts')
   </body>
 </html>

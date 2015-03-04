@@ -7,11 +7,13 @@
 @section('attribute', 'onload="initialize()"')
 
 @section('content')
-
   <div class="container">
     <br>
     @if (Session::has('global'))
-      <div class="alert alert-dismissable alert-success">{{ Session::get('global') }}</div>
+      <div class="alert alert-dismissable alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ Session::get('global') }}
+      </div>
     @endif
     @if ($errors->count())
       <br>
@@ -42,8 +44,8 @@
     </div>
     <div class="col-md-4 col-sm-4">
       <h2 class="text-center"><i class="fa fa-envelope-o fa-2x"></i></h2>
-      <p class="text-center">sale@compnet.kz</p>
-      <p class="text-center">info@compnet.kz</p>
+      <p class="text-center">office@compnet.kz</p>
+      <p class="text-center">support@compnet.kz</p>
     </div>
     <br><br><br>
   </div>
@@ -53,7 +55,7 @@
     <h1 class="text-center text-uppercase">Отправить заявку</h1>
     <br>
 
-    {{ Form::open(['route' => 'send-message']) }}
+    {{ Form::open(['route' => 'send-app']) }}
       <div class="col-md-3 form-group">
         <label for="name">Имя</label>
         <input type="text" name="name" class="form-control" id="name" maxlength="40" required>

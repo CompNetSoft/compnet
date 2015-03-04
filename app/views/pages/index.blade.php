@@ -7,7 +7,12 @@
 @section('content')
   <div class="slider">
     <div class="container">
-      <img src="/img/cosmos-2.jpg" class="img-responsive">
+      <div class="col-md-6">
+        <img src="{{ asset('/img/logo-coral.png') }}" class="img-responsive logo">
+      </div>
+      <div class="col-md-6">
+        
+      </div>
     </div>
   </div>
 
@@ -130,105 +135,12 @@
         <br><br>
         <p class="text-center">
           <a href="{{ route('services', 'it-outsourcing') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#Calculator">
-            <i class="fa fa-calculator"></i> Калькулятор
-          </button>
-          <!-- <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target=".calculator">
-            <i class="fa fa-calculator"></i> Калькулятор
-          </button> -->
+          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</button>
         </p>
         <br><br>
       </div>
     </div>
   </section>
-
-  <!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="Calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content bg-dark">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-muted" aria-hidden="true">&times;</span></button>
-        <h2 class="text-center modal-title" id="myModalLabel">Калькулятор</h2>
-      </div>
-      <div class="modal-body">
-        <div id="count">
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <h3 class="text-light-coral">Структура сети</h3>
-            <input id="priceDepot" type="hidden" value="5000">Количество рабочих станций&nbsp;
-            <span class="chevron">
-              <i id="leftDepot" class="fa fa-chevron-left"></i> 
-              <input id="amountDepot" class="number" type="text" value="0"> 
-              <i id="rightDepot" class="fa fa-chevron-right"></i>
-            </span>
-            <div class="checkbox">
-              <label><input type="checkbox" value="5000"> Локальная сеть</label>
-            </div>
-            <div class="checkbox">
-              <label><input id="forLocal" type="checkbox"> Интернет</label>
-              <select id="local">
-                <option value="1000">ADSL-модем</option>
-                <option value="2000">Выделенный канал</option>
-              </select>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="3000"> Firewall</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="800"> Принтер</label>
-            </div>
-            <h3 class="text-light-coral">Программное обеспечение</h3> 
-            <div class="checkbox">
-              <label><input type="checkbox" value="7000"> Бухгалтерское ПО</label>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <h3 class="text-light-coral">Роли сервера</h3>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2000"> Файловый сервер</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2800"> Сервер домена</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2000"> Почтовый сервер</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2000"> Сервер приложений</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2000"> Сервер терминалов</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="2000"> Шлюз</label>
-            </div>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <h3 class="text-light-coral">Создание сайта</h3> 
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary passive" value="54000">Сайт визитка</button>
-              <button type="button" class="btn btn-primary passive" value="89000">Интернет магазин</button>
-              <button type="button" class="btn btn-primary passive" value="69000">Landing page</button>
-              <button type="button" class="btn btn-primary passive" value="99000">Веб-приложение</button>
-            </div>
-            <div class="row">
-              <br>
-              <div class="form-group col-md-3">
-                <label class="control-label">Стоимость товара и услуг:</label>
-                <input type="text" class="form-control" id="res" value="0" disabled>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   <section class="bg-dark">
     <br>
@@ -261,7 +173,7 @@
         <br><br>
         <p class="text-center">
           <a href="{{ route('services', 'site-development') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-          <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
+          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</button>
         </p>
         <br><br>
       </div>
@@ -274,45 +186,36 @@
       <br><br>
       <h1 class="text-center text-uppercase text-light-coral">SEO &amp; SMM</h1>
       <br>
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <h2 class="text-center">SEO (Search Engine Optimization) Поисковая Оптимизация</h2>
-          <br>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <img src="{{ asset('/img/se/google.png') }}" class="img-responsive" title="Google" alt="Google">
-          </div>
-          <p class="col-md-12 col-sm-12 col-xs-12"></p>
-          <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8">
-            <img src="{{ asset('/img/se/mail.ru.png') }}" class="img-responsive" title="Mail.ru" alt="Mail.ru">
-          </div>
-          <p class="col-md-12"></p>
-          <p class="clearfix"></p>
-          <p class="text-justify">Чем выше позиция вашего сайта в выдаче поисковика, тем больше вероятность, что посетитель зайдёт на сайт, так как примерно 100% заходит по первым трём ссылкам поисковой выдачи, далее тенденция к уменьшению – до десятой ссылки первой страницы выдачи добираются 20-50% пользователей.</p>
-          <p class="text-justify">На вторую страницу выдачи поиковика заходят 10-20%. Следовательно, для всякого ресурса наиболее желанно место именно в первой десятке поисковой выдачи. Но, к сожалению, сайтов-конкурентов слишком много, а десятка всего одна. Появляется резонный вопрос: как же покорить это вершину и выбиться в лидеры? И тут SEO-оптимизация сайта приходит на помощь.</p>
+      <div class="col-md-6 col-sm-6">
+        <h2 class="text-center">SEO (Search Engine Optimization) Поисковая Оптимизация</h2>
+        <br>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <img src="{{ asset('/img/se/google.png') }}" class="img-responsive" title="Google" alt="Google">
         </div>
-        <div class="col-md-6 col-sm-6">
-          <h2 class="text-center">SMM (Social Media Marketing) Продвижение в Социальных Медиа</h2>
-          <br>
-          <img src="{{ asset('/img/sn/facebook.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Facebook" alt="Facebook">
-          <img src="{{ asset('/img/sn/twitter.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Twitter" alt="Twitter">
-          <img src="{{ asset('/img/sn/vk.png') }}" class="col-md-4 col-sm-4 col-xs-4" title="Vkontakte" alt="Vkontakte">
-          <p class="col-md-12 col-sm-12 col-xs-12"><br></p>
-          <img src="{{ asset('/img/sn/google-plus.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Google Plus" alt="Google Plus">
-          <img src="{{ asset('/img/sn/linkedin.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="LinkedIn" alt="LinkedIn">
-          <img src="{{ asset('/img/sn/instagram.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Instagram" alt="Instagram">
-          <img src="{{ asset('/img/sn/odnoklassniki.png') }}" class="col-md-3 col-sm-3 col-xs-3" title="Odnoklassniki" alt="Odnoklassniki">
-          <p class="clearfix"></p>
-          <p class="text-justify">SMM - деятельность, целью которой является продвижение товара или бренда в социальных сетях. Увеличить узнаваемость, а так же лояльность клиентов к бренду. Продвижение в социальных сетях – это процесс, целью которого является привлечь аудиторию в сообщество бренда. Донести до целевой аудиторий ключевые преимущества предлагаемых товаров и услуг (цена, качество и другие).</p>
-          <p class="text-justify">Если раньше продвижение бренда совершалась по средством телерекламы, сейчас актуально через социальные сети. Как показывает статистика одной социальной сети, больше всех в социальных сетях зарегистрированы люди от 18-34 лет.</p>
+        <p class="col-md-12 col-sm-12 col-xs-12"></p>
+        <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-2 col-md-8 col-sm-8 col-xs-8">
+          <img src="{{ asset('/img/se/mail.ru.png') }}" class="img-responsive" title="Mail.ru" alt="Mail.ru">
         </div>
-        <div class="col-md-12 col-sm-12">
-          <br><br>
-          <p class="text-center">
-            <a href="{{ route('services', 'seo-smm') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-            <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
-          </p>
-          <br><br>
-        </div>
+        <p class="col-md-12"></p>
+        <p class="clearfix"></p>
+        <p class="text-justify">Чем выше позиция вашего сайта в выдаче поисковика, тем больше вероятность, что посетитель зайдёт на сайт, так как примерно 100% заходит по первым трём ссылкам поисковой выдачи, далее тенденция к уменьшению – до десятой ссылки первой страницы выдачи добираются 20-50% пользователей.</p>
+        <p class="text-justify">На вторую страницу выдачи поиковика заходят 10-20%. Следовательно, для всякого ресурса наиболее желанно место именно в первой десятке поисковой выдачи. Но, к сожалению, сайтов-конкурентов слишком много, а десятка всего одна. Появляется резонный вопрос: как же покорить это вершину и выбиться в лидеры? И тут SEO-оптимизация сайта приходит на помощь.</p>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <h2 class="text-center">SMM (Social Media Marketing) Продвижение в Соц. Медиа</h2>
+        <br>
+        <img src="{{ asset('/img/sn/sn.png') }}" class="img-responsive" title="Социальные сети" alt="Социальные сети">
+        <p class="clearfix"></p>
+        <p class="text-justify">SMM - деятельность, целью которой является продвижение товара или бренда в социальных сетях. Увеличить узнаваемость, а так же лояльность клиентов к бренду. Продвижение в социальных сетях – это процесс, целью которого является привлечь аудиторию в сообщество бренда. Донести до целевой аудиторий ключевые преимущества предлагаемых товаров и услуг (цена, качество и другие).</p>
+        <p class="text-justify">Если раньше продвижение бренда совершалась по средством телерекламы, сейчас актуально через социальные сети. Как показывает статистика одной социальной сети, больше всех в социальных сетях зарегистрированы люди от 18-34 лет.</p>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <br><br>
+        <p class="text-center">
+          <a href="{{ route('services', 'seo-smm') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
+          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</button>
+        </p>
+        <br><br>
       </div>
     </div>
   </section>
@@ -328,7 +231,7 @@
         <img src="{{ asset('/img/tc/network.jpg') }}" class="img-responsive">
       </div>
       <div class="col-md-6">
-        <h2 class="text-center">Системное администрирование</h2>
+        <h2 class="text-center">Системное Администрирование</h2>
         <p class="text-justify">При ТОО «CompNet Technologies» действует Учебный центр, где Вы можете получить всю информацию, знания и навыки работы системного администрирования. Курс рассчитан как для начинающих системных администраторов, так и для слушателей, которые уже приобрели навыки управления системой и сетью, для усовершенствования своих знаний.</p>
         <p class="text-justify">Системный администратор ежедневно работает с множеством технологий, которые всё время меняются и развиваются. Это стимулирует постоянно совершенствоваться. Если Вам всегда было интересно разбираться в том, как устроены вещи, понимать взаимосвязи, а ещё Вы давно увлечены компьютерами – профессия системного администратора будет Вам близка по духу.</p>
       </div>
@@ -349,93 +252,248 @@
       </div>
       <div class="col-md-12">
         <br><br>
-        <p class="text-center">Чтобы записаться на эту программу обучения достаточно обратиться в Учебный Центр при ТОО «CompNet Technologies» для заключения договора и в кратчайшие сроки приступить к изучению курса.</p>
+        <p class="text-center">Приведите друга и получите скидку 10% для Вас и для Вашего друга.</p>
+        <p class="text-center">Чтобы записаться на эту программу обучения достаточно обратиться в Учебный Центр ТОО «CompNet Technologies» для заключения договора и в кратчайшие сроки приступить к изучению курса.</p>
         <br>
         <p class="text-center">
           <a href="{{ route('services', 'training-center') }}" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-puzzle-piece"></i> Детально</a>
-          <a href="#" class="btn btn-outlined btn-order text-uppercase"><i class="fa fa-calculator"></i> Калькулятор</a>
+          <button type="button" class="btn btn-outlined btn-order text-uppercase" data-toggle="modal" data-target="#calculator-2"><i class="fa fa-calculator"></i> Калькулятор</button>
         </p>
         <br><br>
       </div>
     </div>
   </section>
 
-  <div class="about">
-    <div class="container">
-      <br><br>
-
-      <div class="col-md-3">
-        <br>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-          <!-- Comments -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <div class="">
-                <p class="text-light-coral">
-                  <i class="fa fa-quote-left"></i>&nbsp;
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                  &nbsp;<i class="fa fa-quote-right"></i>
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="">
-                <p class="text-light-coral">
-                  <i class="fa fa-quote-left"></i>&nbsp;
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  &nbsp;<i class="fa fa-quote-right"></i>
-                </p><br>
-              </div>
-            </div>
+  <!-- Modal calculator -->
+  <div class="container">
+    <div class="modal fade bs-example-modal-lg" id="calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-muted" aria-hidden="true">&times;</span></button>
+            <h2 class="text-center text-uppercase modal-title" id="myModalLabel">Калькулятор</h2>
           </div>
-
-          <!-- Controls -->
-          <div class="text-center">
-            <span class="fa-stack" data-target="#carousel-example-generic" data-slide="prev">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-chevron-left fa-stack-1x fa-inverse" aria-hidden="true"></i>
-            </span>
-            <span class="fa-stack" data-target="#carousel-example-generic" data-slide="next">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-chevron-right fa-stack-1x fa-inverse" aria-hidden="true"></i>
-            </span>
+          <div class="modal-body" id="count">
+            <!-- <form method="POST" action="javascript:void(null);" accept-charset="UTF-8" id="formCalc" onsubmit="call()"> -->
+              {{ Form::open(['route' => 'send-calc']) }}
+              <h2 class="text-center text-uppercase text-light-coral">IT Аутсорсинг</h2>
+              <div class="col-md-4">
+                <h3>Структура сети</h3>
+                <input type="hidden" name="services-element" value="1">
+                <input type="hidden" id="priceDepot" value="5000">Количество рабочих станций<br>
+                <span class="chevron">
+                  <i id="leftDepot" class="fa fa-chevron-left" onselectstart="return false"></i> 
+                  <input type="text" name="computer" class="number" id="amountDepot" value="0">
+                  <i id="rightDepot" class="fa fa-chevron-right" onselectstart="return false"></i>
+                </span>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="local-network" value="5000">Локальная сеть</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="forLocal">Интернет</label>
+                  <select name="internet" id="local">
+                    <option value="1000">ADSL-модем</option>
+                    <option value="2000">Выделенный канал</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="firewall" value="3000">Firewall</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="printer" value="800">Принтер</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>Роли сервера</h3>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="file-server" value="2000">Файловый сервер</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="domain-server" value="2800">Сервер домена</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="mail-server" value="2000">Почтовый сервер</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="application-server" value="2000">Сервер приложений</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="terminal-server" value="2000">Сервер терминалов</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="gateway" value="2000">Шлюз</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>Программное обеспечение</h3>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="accounting-software" value="7000">Бухгалтерское ПО</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <h2 class="text-center text-uppercase text-light-coral">Создание сайта</h2><br>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="website" autocomplete="off" value="54000"> Сайт визитка
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="landing-page" autocomplete="off" value="69000"> Landing page
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="internet-shop" autocomplete="off" value="89000"> Интернет магазин
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="web-application" autocomplete="off" value="89000"> Веб-приложение
+                  </label>
+                </div>
+                <h2 class="text-center text-uppercase text-light-coral">SEO &amp; SMM</h2><br>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="seo" autocomplete="off" value="25000"> SEO
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" name="smm" autocomplete="off" value="15000"> SMM
+                  </label>
+                </div>
+                <div class="row">
+                  <br>
+                  <div class="form-group col-md-4">
+                    <label class="control-label">Ваше имя:</label>
+                    <input type="text" name="name" class="form-control" maxlength="30" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="control-label">Номер телефона:</label>
+                    <input type="tel" name="phone" class="form-control" maxlength="20" required>
+                  </div>
+                  <div class="form-group has-success col-md-4">
+                    <label class="control-label"><b>Общая стоимость:</b></label>
+                    <input type="text" name="price" class="form-control" id="res" value="0" disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7" id="response"></div>
+              <div class="col-md-5 text-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Закрыть</button>
+                <button type="submit" class="btn btn-primary" id="sendCalc"><i class="fa fa-send"></i> Отправить заявку</button>
+              </div>
+              <div class="clearfix"></div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <h1 class="text-center text-uppercase text-light-coral">
-          Сделано в CompNet Сделано с<br>
-          <span class="fa-stack fa-3x">
-            <i class="fa fa-heart fa-stack-2x"></i>
-            <i class="fa fa-you fa-stack-1x fa-inverse"></i>
-          </span>
-        </h1>
-      </div>
-      <div class="col-md-3 text-center">
-        <h2>Поделитесь новостями о нас, и получите скидку!</h2>
-
-      </div>
-      <div class="clearfix"></div>
-      <br><br>
-
-      <div class="col-md-6">
-        <p class="text-justify">Bulum iaculis lacinia est. Proin dictum elemntum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit met consectetuer adipiscing elit. ellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.</p>
-        <p class="text-justify">Nulla vene natis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante. Donec sagittis euismod pured ut perspiciatis unde omnis iste natus errouptatem accusa ntium doloremque laudantium tota.</p>
-        {{ $page->text }}
-      </div>
-      <div class="col-md-6">
-        <p class="text-justify">Nulla facilis Aenean nectibulumante ipsum prin faucibus orci luctus et trices posuere cubilia Suspendse sollicit udin velit sed le pharetra aue nec augentum. Donec in velit vel ipsum auue. Nam elit magna. Donec porta diam eu massa diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fermentunec in velit vel ipsum auctinar. Proin ullamcorp.</p>
-        <p class="text-justify">Bulum iaculis lacinia est. Proin dictum elemntum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit met consectetuer adipiscing elit. ellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla vene natis. In pede mi aliquet sit amet</p>
+    </div>
+    <div class="modal fade bs-example-modal-lg" id="calculator-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-muted" aria-hidden="true">&times;</span></button>
+            <h2 class="text-center text-uppercase modal-title" id="myModalLabel">Калькулятор</h2>
+          </div>
+          <div class="modal-body" id="count-2">
+            <form method="POST" action="javascript:void(null);" accept-charset="UTF-8" id="formCourse" onsubmit="callTr()">
+              {{ Form::token() }}
+              <div class="col-md-12">
+                <h2 class="text-center text-uppercase text-light-coral">Учебный центр</h2>
+                <div class="col-md-6">
+                  <h1 class="text-center"><i class="fa fa-terminal fa-2x"></i></h1>
+                </div>
+                <div class="col-md-6">
+                  <h1 class="text-center"><i class="fa fa-code fa-2x"></i></h1>
+                </div>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-primary btn-lg">
+                    <input type="checkbox" name="system-administration" autocomplete="off" value="50000"> Системное Администрирвание
+                  </label>
+                  <label class="btn btn-primary btn-lg">
+                    <input type="checkbox" name="web-programming" autocomplete="off" value="50000"> WEB Программирование
+                  </label>
+                </div>
+                <div class="row">
+                  <br>
+                  <div class="form-group col-md-4">
+                    <label class="control-label">Ваше имя:</label>
+                    <input type="text" name="name" class="form-control" maxlength="30" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="control-label">Номер телефона:</label>
+                    <input type="tel" name="phone" class="form-control" maxlength="20" required>
+                  </div>
+                  <div class="form-group has-success col-md-4">
+                    <label class="control-label"><b>Общая стоимость:</b></label>
+                    <input type="text" class="form-control" id="res_2" value="0" disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7" id="response-tr"></div>
+              <div class="col-md-5 text-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Закрыть</button>
+                <button type="submit" class="btn btn-primary" id="sendTr"><i class="fa fa-send"></i> Отправить заявку</button>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <br><br><br>
   </div>
+
+  <div class="container">
+    <br><br>
+    <div class="col-md-3">
+      <br>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Comments -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="">
+              <p class="text-light-coral">
+                <i class="fa fa-quote-left"></i>&nbsp;От лица компании «TURA STROY HIMIYA» хотим выразить благодарность ТОО « CompNet Technologies» за разработку сайта. Спасибо за качественную работу. Компания добросовестно и ответственно исполняли все условия нашей компании. Спасибо большое руководству.&nbsp;<i class="fa fa-quote-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="text-center">
+          <span class="fa-stack" data-target="#carousel-example-generic" data-slide="prev">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-left fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
+          <span class="fa-stack" data-target="#carousel-example-generic" data-slide="next">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-right fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-center text-uppercase text-light-coral">
+        Сделано в CompNet Сделано с<br>
+        <span class="fa-stack fa-3x">
+          <i class="fa fa-heart fa-stack-2x"></i>
+          <i class="fa fa-you fa-stack-1x fa-inverse"></i>
+        </span>
+      </h1>
+    </div>
+    <div class="col-md-3 text-center">
+      <h2>Поделитесь новостями о нас, и получите 10% скидку на все услуги!</h2>
+      <div class="btn-group btn-group-justified">
+        <a class="btn text-white vk" target="_blank" title="VK.com" href="http://vk.com/share.php?url=_http://www.compnet.kz_&title=_TITLE_&description=_DESCTEXT_&image=_URL_TO_MEDIA"><i class="fa fa-vk fa-lg"></i></a>
+        <a class="btn text-white fb" target="_blank" title="Facebook" href="http://www.facebook.com/sharer.php?u=_http://www.compnet.kz_&t=_DESCTEXT_"><i class="fa fa-facebook fa-lg"></i></a>
+        <a class="btn text-white tw" target="_blank" title="Twitter" href="http://twitter.com/share?url=_http://www.compnet.kz_&text=_DESCTEXT_"><i class="fa fa-twitter fa-lg"></i></a>
+        <a class="btn text-white gl" target="_blank" title="Google Plus" href="https://plusone.google.com/_/+1/confirm?hl=en&url=_http://www.compnet.kz_"><i class="fa fa-google-plus fa-lg"></i></a>
+        <a class="btn text-white li" target="_blank" title="LinkedIn" href="http://www.linkedin.com/shareArticle?mini=true&url=_http://www.compnet.kz_"><i class="fa fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <br><br>
+
+    <div class="col-md-12">
+      {{ $page->text }}
+    </div>
+  </div>
+  <br><br><br>
 
   <div class="bg-light-grey">
     <div class="container">
@@ -486,31 +544,27 @@
     </div>
     <div class="col-md-4 col-sm-4">
       <h2 class="text-center"><i class="fa fa-envelope-o fa-2x"></i></h2>
-      <p class="text-center">sale@compnet.kz</p>
-      <p class="text-center">info@compnet.kz</p>
+      <p class="text-center">office@compnet.kz</p>
+      <p class="text-center">support@compnet.kz</p>
     </div>
     <br><br><br>
   </div>
 
-  <!-- <div class="container">
+  <div class="container">
     <br>
     <h1 class="text-center text-uppercase">Отправить заявку</h1>
     <br>
 
-    {{ Form::open(['route' => 'send-message']) }}
-      <div class="col-md-3 form-group">
+    {{ Form::open(['route' => 'send-app']) }}
+      <div class="col-md-4 form-group">
         <label for="name">Имя</label>
         <input type="text" name="name" class="form-control" id="name" maxlength="40" required>
       </div>
-      <div class="col-md-3 form-group">
-        <label for="email">Email адрес</label>
-        <input type="email" name="email" class="form-control" id="email" maxlength="50">
-      </div>
-      <div class="col-md-3 form-group">
+      <div class="col-md-4 form-group">
         <label for="phone">Номер телефона</label>
         <input type="tel" name="phone" class="form-control" id="phone" maxlength="20" required>
       </div>
-      <div class="col-md-3 form-group">
+      <div class="col-md-4 form-group">
         <label>Выберите услугу</label>
         <select name="service" class="form-control select-services">
           <option value="IT Аутсорсинг">IT Аутсорсинг</option>
@@ -519,13 +573,13 @@
           <option value="Учебный Центр">Учебный Центр</option>
         </select>
       </div>
-      <div class="col-md-offset-3 col-md-6 form-group text-center">
+      <div class="col-md-offset-4 col-md-4 form-group text-center">
         <br>
         <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-send"></i> Отправить</button>
         <br>
       </div>
     {{ Form::close() }}
-  </div> -->
+  </div>
 @stop
 
 @section('scripts')
@@ -539,10 +593,41 @@
           return false; 
         });
       });
+
       $('#carousel-it-outsourcing-comments').carousel({
         interval: false
       });
+
+      function call() {
+        var data = $('#formCalc').serialize();
+        $.ajax({
+          type: 'POST',
+          url: '/send-calc',
+          data: data,
+          success: function(response) {
+            $('#response').html(response);
+          },
+          error:  function(xhr, str) {
+            alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+      };
+      function callTr() {
+        var dataTr = $('#formCourse').serialize();
+        $.ajax({
+          type: 'POST',
+          url: '/send-calc',
+          data: dataTr,
+          success: function(response) {
+            $('#response-tr').html(response);
+          },
+          error:  function(xhr, str) {
+            alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+      };
     </script>
+    <script src="{{ asset('/js/calc.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/amcharts.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/serial.js') }}"></script>
     <script type="text/javascript" scr="{{ asset('/js/none.js') }}"></script>

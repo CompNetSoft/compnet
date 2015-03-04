@@ -8,7 +8,7 @@
   <div class="container page-services">
     <br>
     <h2 class="text-center text-uppercase"><a href="{{ route('index') }}"><i class="fa fa-home"></i></a> / Услуги</h2>
-    <h4><a href="#"><i class="fa fa-calculator"></i> Калькулятор</a></h4>
+    <!-- <h4><a href="#" data-toggle="modal" data-target="#calculator"><i class="fa fa-calculator"></i> Калькулятор</a></h4> -->
     <div class="row">
       <ul class="nav nav-pills">
         <li class="col-md-3 col-sm-3 col-xs-6 @if (Request::is('services/it-outsourcing')) {{ 'active' }} @endif">

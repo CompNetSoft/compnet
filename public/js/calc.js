@@ -15,24 +15,24 @@ $('#forLocal').click(function(){
   if ( pro == true){r = (r + fop);}
   else {r = (r - fop);}
   plus();
-})
+});
 $('#count input[type = checkbox]:not(#forLocal)').click(function (){
   v =  parseInt($(this).val())
   pro = $(this).prop("checked");
   if ( pro == true){r = (r + v);}
   else {r = (r - v);}
   plus();
-})
+});
 $('#local').click(function(){
   op = parseInt($(this).val());
   r = (r - fop + op);
-  fop = op; 
+  fop = op;
   plus();
-})
+});
 
 function depotPlus(){
   sumDepot = amountDepot.value * priceDepot.value;
-plus();
+  plus();
 }
 $('#amountDepot').bind("change keyup input click", function() {
   if (this.value.match(/[^0-9]/g)) {
@@ -47,25 +47,30 @@ $('#leftDepot').click(function(){
     else {amountDepot.value = parseInt(amountDepot.value) - 1};
   depotPlus();
   sob.value = 'left';
-}) 
+});
 $('#rightDepot').click(function(){
   amountDepot.value = parseInt(amountDepot.value) + 1;
   depotPlus();
   sob.value = 'right';
-})   
+});
 
-$('.btn-group button').click(function(){
-  if($(this).hasClass('passive')){
-    $('.btn-group button').addClass('passive');
-    $('.btn-group button').removeClass('active');
-    $(this).removeClass('passive');
-    $(this).addClass('active');
-    priceSite =  parseInt($(this).val());
-    plus()
+$('.btn-group label').click(function(){
+  v = parseInt($(this).children().val());
+  pro = $(this).children().prop("checked");
+  if ( pro == true ) {
+    priceSite = priceSite - v;   
   } else {
-    $(this).addClass('passive');
-    $(this).removeClass('active');
-    priceSite = 0;
-    plus()
+    priceSite = priceSite + v; 
   }
-})
+  plus();
+});
+
+$('#count-2 .btn-group label').click(function(){
+  v = parseInt($(this).children().val());
+  pro = $(this).children().prop("checked");
+  if ( pro == true ) {
+    res_2.value = parseInt(res_2.value) - v;
+  } else {
+    res_2.value = parseInt(res_2.value) + v; 
+  }
+});
